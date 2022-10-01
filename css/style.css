@@ -94,7 +94,7 @@ a.social-icon:hover {
 }
 
 .nav-default {
-	color: #160a6d;
+	color: #ffffff;
 	cursor: pointer;
 }
 
@@ -112,7 +112,7 @@ a.social-icon:hover {
 }
 
 .sidebar-user-position {
-	color: #0b137f;
+	color: #d7d7de;
 }
 
 .skills-container {
@@ -296,7 +296,7 @@ table, th, td {
 		left: 0;
 		top: 0;
 		right: 0;
-		background: #0c0c0c;
+		background: #3974bc;
 	}
 
 	.sidebar-nav-container {
@@ -306,7 +306,7 @@ table, th, td {
 	}
 
 	.sidebar-social-container {
-		display: none;
+		display: inline-block;
 	}
 
 	.sidebar-user-img {
