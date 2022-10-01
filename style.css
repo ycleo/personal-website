@@ -1,10 +1,11 @@
 @charset "utf-8";
 
 body {
-    font-family: "Montserrat";
-    background: #0c0c0c;
-    color: #ffffff;
+	font-family: 'Montserrat';
+	background: #0c0c0c;
+	color: #ffffff;
 }
+
 
 a.social-icon {
 	margin-right: 10px;
@@ -13,17 +14,54 @@ a.social-icon {
 	text-decoration: none;
 }
 
+a {
+	color: #9e9e9e;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1a1a1a;
+	text-decoration: none;
+}
 
 a.social-icon:hover {
 	color: #ffffff;
 	text-decoration: none;
 }
 
+.about-text {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
 .content-container {
     background: #ffffff;
     color: #0c0c0c;
     font-size: 12px;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab';
+}
+
+.content-title {
+	color: #1a1a1a;
+	font-family: 'Montserrat';
+}
+
+.info-circle-container {
+	margin-top: 15px;
+}
+
+.info-circle-container span{
+	margin-right: 5px;
+}
+
+.nav-default {
+    color: #bebebe;
+    cursor: pointer;
+}
+
+.nav-default:hover {
+    color: #ffffff;
+    cursor: pointer;   
 }
 
 .sidebar-container {
@@ -31,11 +69,27 @@ a.social-icon:hover {
 }
 
 .sidebar-user-img {
-    border-radius: 50%;
+    border-radius: 90%;
 }
 
 .sidebar-user-position {
 	color: #777676;
+}
+
+.skills-container {
+    display: inline-block;
+}
+.skills-ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.skills-ul li {
+	display: inline-block;
+	float: left;
+	width: 170px;
+	margin-top: 15px;
 }
 
 @media only screen and ( min-width: 1000px ) {
@@ -46,31 +100,14 @@ a.social-icon:hover {
         margin-bottom: 40px;
     }
 
-    .main-container {
-        width: 1000px;
-        margin: 0 auto;
-    }
-    
-    .sidebar-container {
-        width: 190px;
-        float: left;
-        margin-top: 40px;
-    }
+    .content-container-inner {
+		padding: 40px;
+	}
 
-    .sidebar-user-img {
-        height: 175px;
-        width: 175px;
-        margin-left: 7px;
-    }
-
-    .sidebar-user-name {
-        font-size: 26px;
-        margin-top: 15px;
-    }
-
-    .mobile-manu {
-        display: none;
-    }
+    .content-title {
+		font-size: 14px;
+		margin-bottom: 40px;
+	}
 
     .hover-grow {
 		display: inline-block;
@@ -101,56 +138,113 @@ a.social-icon:hover {
 		cursor:pointer;
 	}
 
-    .sidebar-nav-container {
-        width: 100%;
-        margin-top: 30px;
+
+    .main-container {
+        width: 1000px;
+        margin: 0 auto;
     }
+
+    .mobile-manu {
+        display: none;
+    }
+
+    .nav-default {
+		font-size: 10px;
+	}
+
+	.sidebar-container {
+		width: 190px;
+		float: left;
+		margin-top: 40px;
+	}
+
+	.sidebar-nav-container {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.sidebar-social-container {
+		display: block;
+		width: 100%;
+		margin-top: 30px;
+		font-size: 16px;
+	}
+
+	.sidebar-user-img {
+		height: 175px;
+		width: 175px;
+		margin-left: 7px;
+	}
+
+	.sidebar-user-name {
+		font-size: 26px;
+		margin-top: 15px;
+	}
+
 }
 
 @media only screen and ( max-width: 1000px ) {
     .content-container {
-        margin-top: 65px;
-    }
-    .sidebar-container {
-        padding: 10px;
-        left: 0;
-        top: 0;
-        right: 0;
-        background: #0c0c0c;
-    }
+		margin-top: 65px;
+	}
 
-    .sidebar-user-img {
-        height: 50px;
-        width: 50px;
-        float: left;
-    }
+	.content-container-inner {
+		padding: 20px;
+	}
 
-    .sidebar-user-info {
-        display: inline-block;
-        margin-left: 10px;
-    }
-
-    .sidebar-user-name {
-        width: 140px;
-        font-size: 20px;
-        float: left;
-    }
-
-    .sidebar-user-position {
-        width: 140px;
-        font-size: 12px;
-    }
+	.content-title {
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
 
     .mobile-menu {
-        display: block;
-        float: right;
-        font-size: 35px;
-        cursor: pointer;
-    }
+		display: block;
+		float: right;
+		font-size: 35px;
+		cursor: pointer;
+	}
 
-    .sidebar-nav-container {
-        width: 100%;
-        display: none;
-        text-align: center;
-    }
+	.nav-default {
+		font-size: 20px;
+	}
+
+	.sidebar-container {
+		padding: 10px;
+		left: 0;
+		top: 0;
+		right: 0;
+		background: #0c0c0c;
+	}
+
+	.sidebar-nav-container {
+		width: 100%;
+		display: none;
+		text-align: center;
+	}
+
+	.sidebar-social-container {
+		display: none;
+	}
+
+	.sidebar-user-img {
+		height: 50px;
+		width: 50px;
+		float: left;
+	}
+
+	.sidebar-user-info {
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	.sidebar-user-name {
+		width: 140px;
+		font-size: 20px;
+		float: left;
+	}
+
+	.sidebar-user-position {
+		width: 140px;
+		font-size: 12px;
+	}
 }
