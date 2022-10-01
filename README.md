@@ -1,7 +1,7 @@
 # Personal Website (CS 5610 Project 1)
 
-[Website Link]()
-This project is my personal website and was built by HTML, CSS, javascripts, and jQuery.
+[Website Link]() <br />
+This project is my personal website and was built by HTML, CSS, javascripts, and jQuery. <br />
 With the sidebar manu on the left of the main page, visitors can navigate my education, experience, and portfolio pages.
 
 ## Page captures
