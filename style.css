@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+body {
+    font-family: "Montserrat";
+    background: #0c0c0c;
+    color: #ffffff;
+}
+
+a.social-icon {
+	margin-right: 10px;
+	margin-top: 10px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+a.social-icon:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.content-container {
+    background: #ffffff;
+    color: #0c0c0c;
+    font-size: 12px;
+    font-family: "Roboto Slab";
+}
+
+.sidebar-container {
+    position: fixed;
+}
+
+.sidebar-user-img {
+    border-radius: 50%;
+}
+
+.sidebar-user-position {
+	color: #777676;
+}
+
+@media only screen and ( min-width: 1000px ) {
+    .content-container {
+        width: 790px;
+        float: right;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .main-container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .sidebar-container {
+        width: 190px;
+        float: left;
+        margin-top: 40px;
+    }
+
+    .sidebar-user-img {
+        height: 175px;
+        width: 175px;
+        margin-left: 7px;
+    }
+
+    .sidebar-user-name {
+        font-size: 26px;
+        margin-top: 15px;
+    }
+
+    .mobile-manu {
+        display: none;
+    }
+
+    .hover-grow {
+		display: inline-block;
+		vertical-align: middle;
+		-webkit-transform: perspective( 1px ) translateZ( 0 );
+		transform: perspective( 1px ) translateZ( 0 );
+		box-shadow: 0 0 1px transparent;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+	}
+	.hover-grow:hover, 
+	.hover-grow:focus, 
+	.hover-grow:active {
+		-webkit-transform: scale( 1.5 );
+		transform: scale( 1.5 );
+	}
+
+	.hover-360 {
+		-webkit-transition: -webkit-transform 1s ease-in-out;
+		transition: transform 1s ease-in-out;
+	}
+
+	.hover-360:hover {
+		-webkit-transform: rotate( 360deg );
+		transform: rotate( 360deg );
+		cursor:pointer;
+	}
+
+    .sidebar-nav-container {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and ( max-width: 1000px ) {
+    .content-container {
+        margin-top: 65px;
+    }
+    .sidebar-container {
+        padding: 10px;
+        left: 0;
+        top: 0;
+        right: 0;
+        background: #0c0c0c;
+    }
+
+    .sidebar-user-img {
+        height: 50px;
+        width: 50px;
+        float: left;
+    }
+
+    .sidebar-user-info {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .sidebar-user-name {
+        width: 140px;
+        font-size: 20px;
+        float: left;
+    }
+
+    .sidebar-user-position {
+        width: 140px;
+        font-size: 12px;
+    }
+
+    .mobile-menu {
+        display: block;
+        float: right;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .sidebar-nav-container {
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+}
