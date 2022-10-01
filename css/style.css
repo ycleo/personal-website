@@ -2,10 +2,9 @@
 
 body {
 	font-family: 'Montserrat';
-	background: #0c0c0c;
+	background: #6498d0;
 	color: #ffffff;
 }
-
 
 a.social-icon {
 	margin-right: 10px;
@@ -15,7 +14,7 @@ a.social-icon {
 }
 
 a {
-	color: #9e9e9e;
+	color: #3974bc;
 	text-decoration: none;
 }
 
@@ -30,20 +29,60 @@ a.social-icon:hover {
 }
 
 .about-text {
-	margin-top: 40px;
+	margin-top: 25px;
 	margin-bottom: 40px;
 }
 
 .content-container {
-    background: #ffffff;
-    color: #0c0c0c;
-    font-size: 12px;
-    font-family: 'Roboto Slab';
+	background: #ffffff;
+	color: #0c0c0c;
+	font-size: 12px;
+	font-family: 'Roboto Slab';
 }
 
 .content-title {
 	color: #1a1a1a;
 	font-family: 'Montserrat';
+}
+
+.highlight-section {
+	margin-top: 40px;
+}
+
+.highlight-section-inner {
+	display: inline-block;
+	width: 100%;
+}
+
+.highlight-section-content {
+	color: #1a1a1a;
+	font-size: 14px;
+	font-family: 'Montserrat';
+}
+
+.highlight-section-title {
+	color: #1a1a1a;
+	font-size: 14px;
+	font-family: 'Montserrat';
+}
+
+.highlight-section-sub-title {
+	color: #767677;
+	font-size: 10px;
+	font-family: 'Montserrat';
+	margin-top: 5px;
+}
+
+.highlight-section-text {
+	color: #0c0c0c;
+	font-size: 12px;
+	font-family: 'Roboto Slab';
+	margin-top: 5px;
+}
+
+.highlight-section-separator {
+	border-bottom: 1px solid #bebebe;
+	margin-top: 40px;
 }
 
 .info-circle-container {
@@ -55,34 +94,35 @@ a.social-icon:hover {
 }
 
 .nav-default {
-    color: #bebebe;
-    cursor: pointer;
+	color: #160a6d;
+	cursor: pointer;
 }
 
 .nav-default:hover {
-    color: #ffffff;
-    cursor: pointer;   
+	cursor: pointer;
+	color: #ffffff;
+}
+
+.nav-selected {
+	color: #ffffff;
 }
 
 .sidebar-container {
-    position: fixed;
-}
-
-.sidebar-user-img {
-    border-radius: 90%;
+	position: fixed;
 }
 
 .sidebar-user-position {
-	color: #777676;
+	color: #0b137f;
 }
 
 .skills-container {
-    display: inline-block;
+	display: inline-block;
 }
+
 .skills-ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
 
 .skills-ul li {
@@ -92,24 +132,49 @@ a.social-icon:hover {
 	margin-top: 15px;
 }
 
-@media only screen and ( min-width: 1000px ) {
-    .content-container {
-        width: 790px;
-        float: right;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+table, th, td {
+	border: 1px solid black;
+	text-align: center;
+}
 
-    .content-container-inner {
-		padding: 40px;
-	}
 
-    .content-title {
-		font-size: 14px;
+@media only screen and ( min-width: 1000px ) { /* desktop: do things when size it 1000px or greater */
+	.content-container {
+		width: 790px;
+		float: right;
+		margin-top: 40px;
 		margin-bottom: 40px;
 	}
 
-    .hover-grow {
+	.content-container-inner {
+		padding: 40px;
+	}
+
+	.content-title {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.highlight-section-icon {
+		float: left;
+	}
+
+	.highlight-section-icon img {
+		width: 100px;
+		display: block;
+		border-radius: 5px;
+	}
+
+	.highlight-section-content {	
+		float: left;
+		width: 550px;
+	}
+
+	.highlight-section-content-inner {
+		padding-left: 25px;
+	}
+
+	.hover-grow {
 		display: inline-block;
 		vertical-align: middle;
 		-webkit-transform: perspective( 1px ) translateZ( 0 );
@@ -133,22 +198,21 @@ a.social-icon:hover {
 	}
 
 	.hover-360:hover {
-		-webkit-transform: rotate( 360deg );
-		transform: rotate( 360deg );
+		-webkit-transform: rotate( 35deg );
+		transform: rotate( 35deg );
 		cursor:pointer;
 	}
 
+	.main-container {
+		width: 1000px;
+		margin: 0 auto;
+	}
 
-    .main-container {
-        width: 1000px;
-        margin: 0 auto;
-    }
+	.mobile-menu {
+		display: none;
+	}
 
-    .mobile-manu {
-        display: none;
-    }
-
-    .nav-default {
+	.nav-default {
 		font-size: 10px;
 	}
 
@@ -171,20 +235,19 @@ a.social-icon:hover {
 	}
 
 	.sidebar-user-img {
-		height: 175px;
-		width: 175px;
-		margin-left: 7px;
+		height: 100%;
+		width: 100%;
+		margin-left: 0px;
 	}
 
 	.sidebar-user-name {
 		font-size: 26px;
 		margin-top: 15px;
 	}
-
 }
 
-@media only screen and ( max-width: 1000px ) {
-    .content-container {
+@media only screen and ( max-width: 1000px ) { /* mobile: do things when size it 1000px or less */
+	.content-container {
 		margin-top: 65px;
 	}
 
@@ -197,7 +260,27 @@ a.social-icon:hover {
 		margin-bottom: 20px;
 	}
 
-    .mobile-menu {
+	.highlight-section-icon {
+		width:100%;
+		text-align: center;
+	}
+
+	.highlight-section-icon img {
+		width: 50px;
+		border-radius: 5px;
+	}
+
+	.highlight-section-content {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.highlight-section-title,
+	.highlight-section-sub-title {
+		text-align: center;
+	}
+
+	.mobile-menu {
 		display: block;
 		float: right;
 		font-size: 35px;
