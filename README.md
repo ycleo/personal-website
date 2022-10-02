@@ -7,16 +7,16 @@ With the sidebar manu on the left of the main page, visitors can navigate my edu
 ## Page Screenshot
 
 - Landing page
-<img src="images/pages/index.png">
+<img src="images/pages/index.png" height="65%" width="65%">
 
 - Education page
-<img src="images/pages/education.png">
+<img src="images/pages/education.png" height="65%" width="65%">
 
 - Experience page
-<img src="images/pages/experience.png">
+<img src="images/pages/experience.png" height="65%" width="65%">
 
 - Portfolio page
-<img src="images/pages/portfolio.png">
+<img src="images/pages/portfolio.png" height="65%" width="65%">
 
 ## Project Requirements
 
@@ -24,7 +24,7 @@ With the sidebar manu on the left of the main page, visitors can navigate my edu
 
 ✅ 2. Navigational elements: The sidebar styled by CSS can guide the user to navigate between pages, and it will become a toggle button when the size of window is smaller than 1000px width (ex: mobile view). By clicking the button, the page options will show up. Hence, the user doesn't need to resort to the browser's navigation buttons to change the page.
 
-<img src="images/pages/mobile.jpg">
+<img src="images/pages/mobile.jpg" height="25%" width="25%">
 
 ✅ 3. Internal links: The sidebar contains "ABOUT", "EDUCATION", "EXPERIENCE", and "PORTFOLIO" links. Each page is a `.html` file, and the content can be opened in the same browser tab as the site is being viewed in.
 
